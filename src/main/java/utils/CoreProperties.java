@@ -21,7 +21,10 @@ public class CoreProperties {
     private static String restIp;
     private static String[] restAllowedIp;
     private static int restThreadPool;
+<<<<<<< HEAD
     private static int sensorRestPort;
+=======
+>>>>>>> b02b5cf82c3cf7c22935887412ea40d287d2d622
     private static Properties prop = new Properties();
     private static InputStream input = null;
 
@@ -39,7 +42,10 @@ public class CoreProperties {
             setRestIp(prop.getProperty("restIp"));
             setRestAllowedIp(prop.getProperty("restAllowedIp").split(","));
             setRestThreadPool(Integer.parseInt(prop.getProperty("restThreadPool")));
+<<<<<<< HEAD
             setSensorRestPort(Integer.parseInt(prop.getProperty("sensorRestPort")));
+=======
+>>>>>>> b02b5cf82c3cf7c22935887412ea40d287d2d622
             LOG.log(Level.INFO,"Properties loaded");
             return true;
 
@@ -128,6 +134,7 @@ public class CoreProperties {
     public static void setRestThreadPool(int restThreadPool) {
         CoreProperties.restThreadPool = restThreadPool;
     }
+<<<<<<< HEAD
 
     public static int getSensorRestPort() {
         return sensorRestPort;
@@ -136,4 +143,6 @@ public class CoreProperties {
     public static void setSensorRestPort(int sensorRestPort) {
         CoreProperties.sensorRestPort = sensorRestPort;
     }
+=======
+>>>>>>> b02b5cf82c3cf7c22935887412ea40d287d2d622
 }
